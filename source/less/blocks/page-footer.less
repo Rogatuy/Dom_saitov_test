@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: @dark-grey;
+}
+
+.page-footer__wrapper {
+  padding-top: 100px;
+  margin: 0 auto;
+  min-width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-footer__wrapper {
+    min-width: 335px;
+    padding: 20px 16px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-footer__logo {
+    margin: 15px;
+  }
+}
+

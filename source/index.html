@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dom_saitov_test</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff" crossorigin="anonymous">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <section class="page-header__header">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <img src="img/header-logo-1-desktop.svg" width="185" height="48" alt="Лого">
+            </picture>
+          </a>
+          <span class="page-header__signature">Увеличиваем продажи в Вашем бизнесе!</span>
+          <a class="page-header__tel" href="tel:+74872792910">+7 (4872) 79-29-10</a>
+          <button class="page-header__button-tel">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.3334 14.1004V16.6004C18.3344 16.8325 18.2868 17.0622 18.1939 17.2749C18.1009 17.4875 17.9645 17.6784 17.7935 17.8353C17.6225 17.9922 17.4206 18.1116 17.2007 18.186C16.9809 18.2603 16.7479 18.288 16.5168 18.2671C13.9525 17.9884 11.4893 17.1122 9.32511 15.7087C7.31163 14.4293 5.60455 12.7222 4.32511 10.7087C2.91676 8.53474 2.04031 6.05957 1.76677 3.48374C1.74595 3.2533 1.77334 3.02104 1.84719 2.80176C1.92105 2.58248 2.03975 2.38098 2.19575 2.21009C2.35174 2.0392 2.54161 1.90266 2.75327 1.80917C2.96492 1.71569 3.19372 1.66729 3.42511 1.66707H5.92511C6.32953 1.66309 6.7216 1.80631 7.02824 2.07002C7.33488 2.33373 7.53517 2.69995 7.59177 3.10041C7.69729 3.90046 7.89298 4.68601 8.17511 5.44207C8.28723 5.74034 8.31149 6.0645 8.24503 6.37614C8.17857 6.68778 8.02416 6.97383 7.80011 7.20041L6.74177 8.25874C7.92807 10.345 9.65549 12.0724 11.7418 13.2587L12.8001 12.2004C13.0267 11.9764 13.3127 11.8219 13.6244 11.7555C13.936 11.689 14.2602 11.7133 14.5584 11.8254C15.3145 12.1075 16.1001 12.3032 16.9001 12.4087C17.3049 12.4658 17.6746 12.6697 17.9389 12.9817C18.2032 13.2936 18.3436 13.6917 18.3334 14.1004Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Заказать звонок
+          </button>
+      </section>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--drop">
+              <a class="main-nav__link" href="#">
+                увеличение продаж
+                <svg class="main-nav__arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5.5L0 0.500015H10L5 5.5Z"/>
+                </svg>
+              </a>
+              <section class="main-nav__dropted-list dropted-list">
+                <a class="dropted-list__link dropted-list__hit" href="#">Пункт 1</a>
+                <a class="dropted-list__link" href="#">SEO продвижение сайтов в Яндекс</a>
+                <a class="dropted-list__link" href="#">Проведение бизнеса в социальных сетях</a>
+                <a class="dropted-list__link" href="#">Пункт 4</a>
+              </section>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                создание сайтов
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                поддержка
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                битрикс 24
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                о компании
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                отзывы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                кейсы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                контакты
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <button class="main-nav__item main-nav__item--button-search">
+                <svg class="main-nav__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-catalog">
+      <h1 class="visually-hidden">Предложения</h1>
+        <section class="introduction">
+          <section class="introduction__search">
+            <div class="introduction__search-wrapper visually-hidden">
+              <input class="introduction__search-input" placeholder="Поиск по сайту">
+            </div>
+          </section>
+          <div class="introduction__wrapper">
+            <h2 class="visually-hidden">Комплексное предложение</h2>
+            <p class="introduction__slogan">Комплексный интернет-маркетинг</p>
+            <p class="introduction__signature">Мы помогаем бизнесу находить клиентов быстрее, интегрируя маркетинговые,<br> обучающие и технологические продукты</p>
+            <button class="introduction__button introduction__button--orange">Заказать увеличение продаж</button>
+            <button class="introduction__button introduction__button--opacity">Заказать экспертный аудит</button>
+          </div>
+        </section>
+        <section class="catalog-packages">
+          <h2 class="catalog-packages__header"><span class="catalog-packages__header catalog-packages__header--orange">Антикризисные</span> DIGITAL-пакеты</h2>
+          <section class="catalog-packages__list">
+          <section class="catalog-packages-item catalog-packages-item--stability">
+            <div class="catalog-packages-item__wrapper">
+              <h3 class="catalog-packages-item__heading">Стабильная лидогенерация в кризис</h3>
+              <p class="catalog-packages-item__options">SEO-продвижение + Контекстная реклама</p>
+              <p class="catalog-packages-item__description">Ищете сплит каналов для стабильного лидгена?<br> Нет ничего надежнее классики!</p>
+              <p class="catalog-packages-item__discounts">Специальная скидка до <span class="catalog-packages-item__discounts--bold">40%</span> на каждую услугу в пакете</p>
+              <button class="catalog-packages-item__order-button">Приобрести пакет</button>
+            </div>
+          </section>
+          <section class="catalog-packages-item catalog-packages-item--gain">
+            <div class="catalog-packages-item__wrapper">
+              <h3 class="catalog-packages-item__heading">Усиление лидогенерации в кризис</h3>
+              <p class="catalog-packages-item__options">SEO-продвижение + Управление репутацией</p>
+              <p class="catalog-packages-item__description">Добавьте к классическому
+                продвижению работу с
+                профильными площадками и
+                отзовиками.</p>
+              <p class="catalog-packages-item__discounts">Специальная скидка до <span class="catalog-packages-item__discounts--bold">40%</span> на каждую услугу в пакете</p>
+              <button class="catalog-packages-item__order-button">Приобрести пакет</button>
+            </div>
+          </section>
+          <section class="catalog-packages-item catalog-packages-item--antiblock">
+            <div class="catalog-packages-item__wrapper">
+              <h3 class="catalog-packages-item__heading">Антиблокировка <br>в соцсетях</h3>
+              <p class="catalog-packages-item__options">SEO-продвижение + Таргет + Маркетплейсы</p>
+              <p class="catalog-packages-item__description">Основные каналы лидгена попали под блокировку?<br> У нас уже есть работающее решение.</p>
+              <p class="catalog-packages-item__discounts">Специальная скидка до <span class="catalog-packages-item__discounts--bold">20%</span> на каждую услугу в пакете</p>
+              <button class="catalog-packages-item__order-button">Приобрести пакет</button>
+            </div>
+          </section>
+        </section>
+        </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__wrapper">
+        <section class="page-footer__connection connection">
+          <a class="page-footer__logo" href="index.html">
+            <picture>
+              <img src="img/footer-logo-1-desktop.svg" width="185" height="48" alt="Лого">
+            </picture>
+          </a>
+          <section class="connection__wrapper-region">
+            <p class="connection__region">Ваш регион:</p>
+            <button class="connection__region-button">Тула</button>
+          </section>
+          <a class="connection__tel" href="tel:+74952236659">+7 (495) 223-66-59</a>
+          <p class="connection__adress">г. Тула, ул. Пушкинская, 27</p>
+          <ul class="connection__registation">
+            <li>ИНН 123456789</li>
+            <li>ОГРН 123456789010</li>
+          </ul>
+          <section class="connection_social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/domsaitov">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.1387 0H13.86C2.655 0 -0.00125122 2.65625 -0.00125122 13.8612V26.14C-0.00125122 37.345 2.655 40.0013 13.86 40.0013H26.1387C37.3437 40.0013 40 37.345 40 26.14V13.8612C40 2.65625 37.3175 0 26.1387 0ZM32.2912 28.535H29.3875C28.2875 28.535 27.9487 27.6625 25.97 25.6575C24.2512 23.9912 23.49 23.77 23.0662 23.77C22.4675 23.77 22.2975 23.9388 22.2975 24.76V27.3837C22.2975 28.0875 22.0762 28.51 20.2137 28.51C17.1337 28.51 13.7162 26.6475 11.32 23.1775C7.70625 18.0925 6.7175 14.2837 6.7175 13.4963C6.7175 13.0725 6.88625 12.6762 7.7 12.6762H10.61C11.3462 12.6762 11.6262 13.015 11.9125 13.8025C13.3512 17.9562 15.7475 21.595 16.7362 21.595C17.1012 21.595 17.27 21.4263 17.27 20.495V16.205C17.1587 14.2262 16.1175 14.0562 16.1175 13.3537C16.1175 13.015 16.3975 12.6762 16.8462 12.6762H21.4225C22.0412 12.6762 22.2687 13.015 22.2687 13.7437V19.5312C22.2687 20.1562 22.5487 20.3775 22.7175 20.3775C23.0825 20.3775 23.395 20.1562 24.0712 19.4788C26.1612 17.135 27.6587 13.5213 27.6587 13.5213C27.8537 13.0975 28.1925 12.7013 28.9287 12.7013H31.8387C32.7113 12.7013 32.9062 13.15 32.7113 13.775C32.3462 15.4675 28.785 20.4938 28.785 20.4938C28.4787 21.0013 28.3612 21.2225 28.785 21.7887C29.0975 22.2125 30.1137 23.0913 30.79 23.8787C32.0337 25.2913 32.99 26.4762 33.245 27.2962C33.5312 28.11 33.1087 28.5337 32.2875 28.5337L32.2912 28.535Z"/>
+                  </svg>
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://web.telegram.org/">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.5402 29.1741L29.8214 13.7054C29.9554 13.0506 29.8772 12.5818 29.5871 12.2991C29.2969 12.0164 28.9137 11.9643 28.4375 12.1429L9.15179 19.5759C8.72024 19.7396 8.42634 19.9256 8.27009 20.1339C8.11384 20.3423 8.09524 20.5394 8.21429 20.7254C8.33333 20.9115 8.57143 21.0565 8.92857 21.1607L13.8616 22.7009L25.3125 15.4911C25.625 15.2827 25.8631 15.2381 26.0268 15.3571C26.131 15.4315 26.1012 15.5432 25.9375 15.692L16.6741 24.0625L16.317 29.1518C16.6592 29.1518 16.994 28.9881 17.3214 28.6607L19.7321 26.3393L24.7321 30.0223C25.6845 30.558 26.2872 30.2753 26.5402 29.1741ZM40 20C40 22.7083 39.4717 25.2976 38.4152 27.7679C37.3586 30.2381 35.9375 32.3661 34.1518 34.1518C32.3661 35.9375 30.2381 37.3586 27.7679 38.4152C25.2976 39.4717 22.7083 40 20 40C17.2917 40 14.7024 39.4717 12.2321 38.4152C9.7619 37.3586 7.63393 35.9375 5.84821 34.1518C4.0625 32.3661 2.64137 30.2381 1.58482 27.7679C0.528274 25.2976 0 22.7083 0 20C0 17.2917 0.528274 14.7024 1.58482 12.2321C2.64137 9.7619 4.0625 7.63393 5.84821 5.84821C7.63393 4.0625 9.7619 2.64137 12.2321 1.58482C14.7024 0.528274 17.2917 0 20 0C22.7083 0 25.2976 0.528274 27.7679 1.58482C30.2381 2.64137 32.3661 4.0625 34.1518 5.84821C35.9375 7.63393 37.3586 9.7619 38.4152 12.2321C39.4717 14.7024 40 17.2917 40 20Z"/>
+                    </svg>
+                  <span class="visually-hidden">Мы в Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="page-footer__company-map company-map">
+          <section class="company-map__section">
+            <p class="company-map__header">Увеличение продаж для вашего бизнеса</p>
+            <ul class="company-map__list">
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">SEO</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Тариф «Трафик»</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Тариф «Объем работ»</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Тариф «Лиды / CPA»</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Тариф «SEO + Контекст»</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Комплексное SEO</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Для интернет-магазина</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Продвижение в Яндекс</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Продвижение в Google</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Разовые работы</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">SEO-аудит сайтов</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Вывод из-под санкций</a>
+              </li>
+            </ul>
+          </section>
+          <section class="company-map__section">
+            <p class="company-map__header">Разработка и поддержка сайтов</p>
+            <ul class="company-map__list">
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Разработка</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">На 1С-Битрикс</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">На WordPress</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">На Tilda</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Сайт-визитка</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Интернет-магазин</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Проектирование</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Поддержка сайтов</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Внесение дорабток</a>
+              </li>
+            </ul>
+          </section>
+          <section class="company-map__section">
+            <p class="company-map__header">Компания <br>«Дом сайтов»</p>
+            <ul class="company-map__list">
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Клиенты и отзывы</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Контакты</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Работа в Demis Group</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Личный кабинет</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Статьи</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Публичная оферта</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Партнерская программа</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Гарантии</a>
+              </li>
+              <li class="company-map__item">
+                <a class="company-map__link" href="#">Внесение дорабток</a>
+              </li>
+              </ul>
+          </section>
+        </section>
+      </section>
+      <section class="page-footer__confidential confidential">
+        <span class="confidential__copyrigth">© 2008-2022 Компания «ДОМ САЙТОВ»</span>
+        <section class="confidential__little-information">
+          <a class="confidential__map-site" href="#">Карта сайта</a>
+          <a class="confidential__politics" href="#">Политика конфиденциальности</a>
+        </section>
+      </section>
+    </footer>
+  </body>
+  <script src="js/script.min.js" type="module"></script>
+</html>

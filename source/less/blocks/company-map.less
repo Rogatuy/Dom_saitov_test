@@ -1,0 +1,49 @@
+.company-map {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: @mobile-width-only) {
+  .company-map {
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+}
+
+.company-map__section {
+  width: 185px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .company-map__section {
+    margin: 0 auto;
+  }
+}
+
+.company-map__header {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @white-opacity-half;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.company-map__list {
+  list-style: none;
+  padding: 0;
+}
+
+.company-map__link {
+  text-decoration: none;
+  transition: 350ms;
+  font-size: 14px;
+  line-height: 24px;
+  color: @white;
+}
+
+.company-map__link:hover {
+  color: @orange;
+}
+

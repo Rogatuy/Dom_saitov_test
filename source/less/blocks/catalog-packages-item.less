@@ -1,0 +1,103 @@
+.catalog-packages-item {
+  display: block;
+  width: 360px;
+  padding: 40px 32px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-packages-item {
+    width: 335px;
+    padding: 20px 16px;
+    margin: 10px auto;
+  }
+}
+
+.catalog-packages-item--stability {
+  background-image: url("../../img/background-package-1-desktop.png");
+}
+
+.catalog-packages-item--gain {
+  background-image: url("../../img/background-package-2-desktop.png");
+}
+
+.catalog-packages-item--antiblock {
+  background-image: url("../../img/background-package-3-desktop.png");
+}
+
+.catalog-packages-item__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-packages-item__heading {
+  font-family: "MontserratBold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+  color: @white;
+  margin: 0;
+}
+
+.catalog-packages-item__options {
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  border-top: 1px solid @white-opacity;
+  border-bottom: 1px solid @white-opacity;
+  padding: 20px 65px 20px 0;
+  margin: 0;
+}
+
+.catalog-packages-item__description {
+  font-size: 14px;
+  line-height: 20px;
+  color: @white-opacity-half;
+  padding: 20px 10px 20px 0;
+  margin: 0;
+}
+
+.catalog-packages-item__discounts {
+  font-family: "MontserratMedium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+}
+
+.catalog-packages-item__discounts--bold {
+  font-family: "MontserratBold", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.catalog-packages-item__order-button {
+  font-family: "MontserratMedium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: @orange;
+  border: 1px solid @orange;
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 16px 0;
+  margin-top: 25px;
+  transition: 350ms;
+}
+
+
+.catalog-packages-item__order-button:hover {
+  color: @white;
+  background-color: @dark-orange;
+}

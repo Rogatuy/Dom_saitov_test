@@ -1,0 +1,116 @@
+.connection {
+  width: 460px;
+  display: block;
+  margin-right: 40px;
+  font-family: "MontserratMedium", "Arial", sans-serif;
+}
+
+@media (max-width: @mobile-width-only) {
+  .connection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+.connection__wrapper-region {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+  margin-bottom: 5px;
+  font-family: "MontserratMedium", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .connection__wrapper-region {
+    margin: 15px 15px 0 15px;
+    height: 70px;
+  }
+}
+
+.connection__region {
+  color: @white-opacity-half;
+}
+
+.connection__region-button {
+  font-family: "MontserratMedium", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: @white;
+  border-bottom: 1px solid @white;
+  transition: 350ms;
+  padding: 2px 1px 4px 1px;
+  margin: 14px 3px;
+  cursor: pointer;
+}
+
+@media (max-width: @mobile-width-only) {
+  .connection__region-button {
+    margin: 13px 0 33px 0;
+    padding: 2px 1px 4px 1px;
+  }
+}
+
+.connection__region-button:hover {
+  color: @orange;
+  border-color: @orange;
+}
+
+.connection__tel {
+  text-decoration: none;
+  color: @white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  transition: 350ms;
+}
+
+.connection__tel:hover {
+  color: @orange;
+}
+
+@media (max-width: @mobile-width-only) {
+  .connection__tel {
+    margin: 29px 15px;
+  }
+}
+
+.connection__adress {
+  color: @white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .connection__adress {
+    margin: 29px 15px;
+  }
+}
+
+.connection__registation {
+  list-style: none;
+  color: @white-opacity-half;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .connection__registation {
+    margin: 20px 15px;
+  }
+}
+

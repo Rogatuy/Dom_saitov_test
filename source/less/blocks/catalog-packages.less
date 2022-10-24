@@ -1,0 +1,49 @@
+.catalog-packages {
+  min-width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 89px;
+  padding-bottom: 135px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-packages {
+    min-width: 335px;
+    margin: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+.catalog-packages__header--orange {
+  color: @orange;
+}
+
+.catalog-packages__header {
+  font-family: "MontserratBold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  padding-bottom: 28px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-packages__header {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.catalog-packages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-packages__list {
+    flex-wrap: wrap;
+  }
+}

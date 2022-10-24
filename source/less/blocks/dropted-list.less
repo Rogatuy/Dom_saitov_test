@@ -1,0 +1,38 @@
+.dropted-list__link {
+  float: none;
+  color: @typography;
+  padding: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid @grey-opacity;
+}
+
+.dropted-list__link:hover {
+  color: @orange;
+}
+
+.dropted-list__hit {
+  background-image: url("../../img/icon_hit.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 16px right 16px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .dropted-list__hit {
+    background-position: bottom 32px right 32px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .dropted-list__link {
+    text-align: center;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: @grey-opacity;
+    position: relative;
+    padding: 32px 0;
+  }
+}
+

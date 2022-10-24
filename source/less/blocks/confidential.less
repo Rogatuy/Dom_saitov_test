@@ -1,0 +1,48 @@
+.confidential {
+  color: @white-opacity-thirty;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 16px 0;
+  border-top: 1px solid @white-opacity-ten;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .confidential {
+    min-width: 335px;
+    flex-wrap: wrap;
+    padding: 20px 20px 16px 20px;
+  }
+}
+
+.confidential__map-site {
+  border-right: 1px solid @white-opacity-thirty;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: 350ms;
+  text-decoration: none;
+  color: @white-opacity-thirty;
+}
+
+@media (max-width: @mobile-width-only) {
+  .confidential__copyrigth {
+    padding-bottom: 10px;
+  }
+}
+
+.confidential__politics {
+  cursor: pointer;
+  transition: 350ms;
+  text-decoration: none;
+  list-style: none;
+  color: @white-opacity-thirty;
+}
+
+.confidential__map-site:hover,
+.confidential__politics:hover {
+  color: @orange;
+}
+

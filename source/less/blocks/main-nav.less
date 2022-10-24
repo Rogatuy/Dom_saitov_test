@@ -1,0 +1,140 @@
+.main-nav {
+  width: 100%;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: @grey-opacity;
+  font-family: "MontserratMedium", "Arial", sans-serif;
+}
+
+.main-nav__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__wrapper {
+    width: 100%;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-nav__item {
+  padding-top: 32px;
+  padding-bottom: 20px;
+  display: block;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__item {
+    text-align: center;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: @grey-opacity;
+    position: relative;
+    padding: 32px 0;
+  }
+}
+
+.main-nav__item:hover .main-nav__link {
+  color: @orange;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: @typography;
+  transition: 350ms;
+}
+
+.main-nav__link--drop {
+  overflow: hidden;
+  position: relative;
+}
+
+.main-nav__link svg {
+  fill: @typography;
+  transition: 350ms;
+}
+
+.main-nav__arrow-icon {
+  margin-bottom: 3px;
+}
+
+.main-nav__item:hover .main-nav__arrow-icon {
+  fill: @orange;
+}
+
+.main-nav__dropted-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  transition: 350ms;
+  top: 100%;
+  border: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__dropted-list {
+    position: relative;
+    border: none;
+    top: 33px;
+  }
+}
+
+.main-nav__item--drop:hover .main-nav__dropted-list {
+  display: block;
+}
+
+.main-nav__link:visited {
+  text-decoration: none;
+}
+
+.main-nav__item--button-search {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  transition: 350ms;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__item--button-search {
+    margin: 0 auto;
+  }
+}
+
+.main-nav__item--button-search svg {
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  left: 3px;
+  stroke: @typography;
+  transition: 350ms;
+}
+
+.main-nav__item:hover .main-nav__search-icon {
+  stroke: @orange;
+}
